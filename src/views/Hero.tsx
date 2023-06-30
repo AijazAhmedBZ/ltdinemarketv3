@@ -5,7 +5,7 @@ import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
 const Hero = () => {
   return (
-    <section className="flex py-6 mt-10">
+    <section className="flex flex-col lg:flex-row gap-y-10 py-6 mt-10">
       <div className="flex-1" >
         <Badge className="py-3 px-6 rounded-lg bg-blue-100 text-blue-700 hover:bg-blue-100 ">
           Sale 70%
