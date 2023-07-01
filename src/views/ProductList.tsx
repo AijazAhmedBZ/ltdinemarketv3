@@ -1,15 +1,32 @@
-import React from 'react'
-import brushedRaglanSweatshirt from "public/1-brushed-raglan-sweatshirt.png"
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
+import P1 from "public/1-brushed-raglan-sweatshirt.png";
+import P10 from "public/10-brushed-bomber.png";
+import P3 from "public/3-flex-sweatshirt.png";
+import ProductCard from "@/app/components/ProductCard";
 const ProductList = () => {
   return (
-    <div>
-        <Image src={brushedRaglanSweatshirt} alt="1"/>
-        <h3 className="font-bold text-lg" >Brushed Raglan Sweatshirt</h3>
-        <h3 className="font-bold text-lg mt-3 text-gray-400 " >Long Dress</h3>
-        <h3 className="font-bold text-lg" >$195</h3>
+    <div className="flex gap-x-10 justify-around">
+      <ProductCard
+        title="Brushed Raglan Sweatshirt"
+        category="Long Dress"
+        price={195}
+        img={P1}
+      />
+      <ProductCard
+        title="Brushed Bomber"
+        category="Jacket"
+        price={225}
+        img={P10}
+      />
+      <ProductCard
+        title="Flex Sweatshirt"
+        category="Long Dress"
+        price={175}
+        img={P3}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default ProductList
+export default ProductList;

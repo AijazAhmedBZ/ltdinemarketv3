@@ -3,10 +3,15 @@ import React from "react";
 import title_image from "public/title_image.svg";
 import { Badge } from "@/app/components/ui/badge";
 import { Button } from "@/app/components/ui/button";
+import Bazaar from "public/bazaar.png";
+import Bustle from "public/bustle.png";
+import Versace from "public/versace.png";
+import Instyle from "public/instyle.png";
+import PartnerLogo from "@/app/components/PartnerLogo";
 const Hero = () => {
   return (
     <section className="flex flex-col lg:flex-row gap-y-10 py-6 mt-10">
-      <div className="flex-1" >
+      <div className="flex-1">
         <Badge className="py-3 px-6 rounded-lg bg-blue-100 text-blue-700 hover:bg-blue-100 ">
           Sale 70%
         </Badge>
@@ -18,11 +23,9 @@ const Hero = () => {
           wear Dine outfits.
         </p>
         <Button className="bg-black h-12 px-8 mt-4 ">Start Shopping</Button>
+        <PartnerLogo />
       </div>
-
-      <div>
-        <Image src={title_image} alt="dinemarket_title_image"></Image>
-      </div>
+      <Image src={title_image} alt="title_image" />
     </section>
   );
 };
