@@ -1,5 +1,5 @@
 import { cookies } from "next/dist/client/components/headers";
-import { db, cartTable } from "sanity/lib/drizzle";
+import { db, cartTable } from "../../../../sanity/lib/drizzle";
 import { NextResponse, NextRequest } from "next/server";
 import { eq } from "drizzle-orm";
 
